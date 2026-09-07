@@ -67,3 +67,15 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# PlatformIO
+.pio/
+.vscode/
+
+# embedded binary
+*.elf
+*.bin
+*.hex
+*.uf2
+
+.DS_Store
