@@ -79,3 +79,9 @@ Testing/
 *.uf2
 
 .DS_Store
+
+# KiCad
+*.lck
+*.kicad_prl
+*.kicad_cache
+.kicad_prl*
