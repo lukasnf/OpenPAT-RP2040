@@ -106,6 +106,7 @@ void measureLN() {
   digitalWrite(L_DRIVE, LOW);
   digitalWrite(MOSFET_GATE, LOW);
 
+  // output the results
   Serial.print("Voltage at L_T: "); Serial.print(v_L, 3); Serial.println(" V");
   Serial.print("Voltage at N_T: "); Serial.print(v_N, 3); Serial.println(" V");
   
