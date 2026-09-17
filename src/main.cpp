@@ -2,7 +2,6 @@
 #include <Wire.h>
 #include <Adafruit_ADS1X15.h>
 
-// Erstelle ein ADS1115 Objekt
 Adafruit_ADS1115 ads; 
 
 // pin definitions
