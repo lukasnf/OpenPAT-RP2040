@@ -22,6 +22,7 @@ The measurement circuitry is designed around the RP2040 and relies on a dedicate
 * **Input Protection:** All sensitive analog measurement lines are protected against transients. The circuit uses 10kΩ series resistors (R2, R3, R4, R5) and BAT54S dual Schottky diodes (D1, D2, D3, D4) to safely clamp the ADC inputs to the 3.3V rail and Ground.
 
 ## 📂 Repository Contents
+<img width="631" height="490" alt="Bildschirmfoto 2026-10-05 um 15 35 09" src="https://github.com/user-attachments/assets/ea2fb498-5255-4306-849e-52d807fd6b38" />
 
 ...
 
