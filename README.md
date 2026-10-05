@@ -15,11 +15,11 @@ Operating completely without high measurement voltages, this design allows for s
 The measurement circuitry is designed around the RP2040 and relies on a dedicated analog frontend for precise, low-voltage readings. Based on the schematic (`image_0594a1.png`), the core components and sub-circuits include:
 
 * **Microcontroller:** RP2040
-* **Analog-to-Digital Converter (ADC):** ADS1115 connected via I2C (`I2C_SCL`, `I2C_SDA`) to read the measurement nodes (`PE_TEST`, `PE_TEST_RE`, `L_T`, `N_T`)[cite: 1].
-* **PE Test Current Source:** A constant current source generating approximately 200mA[cite: 1]. This is achieved using an LM317 linear regulator (U1) combined with a 6.2Ω / 1W resistor (R1)[cite: 1].
-* **PE Continuity Measurement:** Employs a **4-wire (Kelvin) measurement method** to accurately determine resistance by eliminating the voltage drop across the test leads. This is implemented using separate connections for force (`PE_FORCE_IN`, `PE_OUT1`) and sense (`PE_SENSE_1`, which connects to the protected `PE_TEST_RE` node)[cite: 1].
-* **L-N Resistance Measurement:** Controlled via RP2040 GPIOs. An NMOS transistor (Q1, controlled by GP26) and a switched pull-up (via GP27 and a 1kΩ resistor) are used to configure the circuit to measure the resistance between the Phase and Neutral test points via the L/N_TEST1 connector[cite: 1].
-* **Input Protection:** All sensitive analog measurement lines are protected against transients. The circuit uses 10kΩ series resistors (R2, R3, R4, R5) and BAT54S dual Schottky diodes (D1, D2, D3, D4) to safely clamp the ADC inputs to the 3.3V rail and Ground[cite: 1].
+* **Analog-to-Digital Converter (ADC):** ADS1115 connected via I2C (`I2C_SCL`, `I2C_SDA`) to read the measurement nodes (`PE_TEST`, `PE_TEST_RE`, `L_T`, `N_T`).
+* **PE Test Current Source:** A constant current source generating approximately 200mA. This is achieved using an LM317 linear regulator (U1) combined with a 6.2Ω / 1W resistor (R1).
+* **PE Continuity Measurement:** Employs a **4-wire (Kelvin) measurement method** to accurately determine resistance by eliminating the voltage drop across the test leads. This is implemented using separate connections for force (`PE_FORCE_IN`, `PE_OUT1`) and sense (`PE_SENSE_1`, which connects to the protected `PE_TEST_RE` node).
+* **L-N Resistance Measurement:** Controlled via RP2040 GPIOs. An NMOS transistor (Q1, controlled by GP26) and a switched pull-up (via GP27 and a 1kΩ resistor) are used to configure the circuit to measure the resistance between the Phase and Neutral test points via the L/N_TEST1 connector.
+* **Input Protection:** All sensitive analog measurement lines are protected against transients. The circuit uses 10kΩ series resistors (R2, R3, R4, R5) and BAT54S dual Schottky diodes (D1, D2, D3, D4) to safely clamp the ADC inputs to the 3.3V rail and Ground.
 
 ## 📂 Repository Contents
 
