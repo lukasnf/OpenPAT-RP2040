@@ -32,8 +32,8 @@ The measurement circuitry is designed around the RP2040 and relies on a dedicate
 
 This repository contains both hardware design files and software source code, which are licensed differently:
 
-* **Hardware:** All hardware design files (schematics, PCB layouts, Gerbers) are released under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2)](LICENSE).
-* **Software/Firmware:** All source code and firmware files are released under the [MIT License](firmware/LICENSE).
+* **Hardware:** All hardware design files (schematics, PCB layouts) are released under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2)](LICENSE).
+* **Software:** All source code is released under the [MIT License](LICENSE-MIT).
 
 
 This README was drafted with AI assistance. All technical information has been manually verified by the author.
