@@ -12,7 +12,7 @@ Operating completely without high measurement voltages, this design allows for s
 
 ## 🛠 Hardware Architecture
 
-The measurement circuitry is designed around the RP2040 and relies on a dedicated analog frontend for precise, low-voltage readings. Based on the schematic (`image_0594a1.png`), the core components and sub-circuits include:
+The measurement circuitry is designed around the RP2040 and relies on a dedicated analog frontend for precise, low-voltage readings. Based on the schematic, the core components and sub-circuits include:
 
 * **Microcontroller:** RP2040
 * **Analog-to-Digital Converter (ADC):** ADS1115 connected via I2C (`I2C_SCL`, `I2C_SDA`) to read the measurement nodes (`PE_TEST`, `PE_TEST_RE`, `L_T`, `N_T`).
@@ -23,6 +23,8 @@ The measurement circuitry is designed around the RP2040 and relies on a dedicate
 
 ## 📂 Repository Contents
 <img width="631" height="490" alt="Bildschirmfoto 2026-10-05 um 15 35 09" src="https://github.com/user-attachments/assets/ea2fb498-5255-4306-849e-52d807fd6b38" />
+
+<img width="1732" height="1044" alt="image" src="https://github.com/user-attachments/assets/b9f0d478-d94d-4992-8590-68096dfa7ec6" />
 
 ...
 
