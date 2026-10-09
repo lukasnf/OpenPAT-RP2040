@@ -4450,6 +4450,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "in reality gp2 (SDA), gp3(SCL) don't wonder\n"
+		(exclude_from_sim no)
+		(at 117.094 133.604 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b6e764a1-9ec4-4442-b155-80ab03473adb")
+	)
 	(junction
 		(at 132.08 74.93)
 		(diameter 0)
@@ -4509,20 +4519,16 @@
 		(uuid "1936ee4e-644a-457f-a2f9-47042dabefc2")
 	)
 	(no_connect
-		(at 121.92 121.92)
-		(uuid "1b3a3577-7600-44d4-b37b-c758592b6d73")
-	)
-	(no_connect
 		(at 101.6 124.46)
 		(uuid "2467f8d6-128d-4abb-8a5e-a88e16bc3363")
 	)
 	(no_connect
-		(at 121.92 111.76)
-		(uuid "26af0d9c-fa12-4697-84f3-14354436f6fd")
-	)
-	(no_connect
 		(at 121.92 124.46)
 		(uuid "3a209c15-b256-4b77-872f-8489a24f71dd")
+	)
+	(no_connect
+		(at 121.92 111.76)
+		(uuid "3a30033b-8347-4478-b2c5-2e4668e0420c")
 	)
 	(no_connect
 		(at 213.36 113.03)
@@ -4533,12 +4539,16 @@
 		(uuid "50f815de-40f8-4b47-b5d0-3354741bf194")
 	)
 	(no_connect
-		(at 121.92 114.3)
-		(uuid "7bdf3576-e9db-4c47-b94f-c39efc63bc72")
-	)
-	(no_connect
 		(at 121.92 106.68)
 		(uuid "ab476872-6a94-4a5f-9e07-2f643ca8c122")
+	)
+	(no_connect
+		(at 121.92 114.3)
+		(uuid "c3575f4d-e760-450f-b951-4a290571ffc7")
+	)
+	(no_connect
+		(at 121.92 116.84)
+		(uuid "c7d6f4f5-5b38-46ca-8c4f-003795db0189")
 	)
 	(no_connect
 		(at 101.6 114.3)
@@ -4972,16 +4982,6 @@
 		)
 		(uuid "1ddc268a-dafc-4493-882a-701a83d70a11")
 	)
-	(label "I2C_SCL"
-		(at 121.92 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2a36175a-55bb-4699-9b0d-ae2111f4ff79")
-	)
 	(label "N_TEST"
 		(at 135.89 74.93 0)
 		(effects
@@ -5002,7 +5002,7 @@
 		)
 		(uuid "326479cd-7ac2-4af0-ae12-b55c4163a280")
 	)
-	(label "GP6"
+	(label "I2C_SDA"
 		(at 121.92 121.92 0)
 		(effects
 			(font
@@ -5112,6 +5112,16 @@
 		)
 		(uuid "5ef94286-751b-48ed-bfe7-b95194cd3b76")
 	)
+	(label "I2C_SCL"
+		(at 121.92 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60c2f481-0419-45f1-adaf-f25dcdac31d0")
+	)
 	(label "N_TEST"
 		(at 154.94 91.44 270)
 		(effects
@@ -5131,16 +5141,6 @@
 			(justify left bottom)
 		)
 		(uuid "74055208-0454-4f7c-9d69-72df994e5f13")
-	)
-	(label "I2C_SDA"
-		(at 121.92 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "789b2161-7cad-4a30-83dc-cdcae6b9d175")
 	)
 	(label "GP3"
 		(at 121.92 114.3 0)
@@ -5281,6 +5281,16 @@
 			(justify left bottom)
 		)
 		(uuid "cd3081f3-b7a0-4c1a-af91-f5535605a9a3")
+	)
+	(label "GP4"
+		(at 121.92 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf686a1e-a35f-4804-a67c-8af26ab92b3c")
 	)
 	(label ""
 		(at 101.6 106.68 0)
