@@ -16,27 +16,40 @@ const int ADS_N_T     = 3; // N_T
 
 // constants
 const float PE_CURRENT_A = 0.2016; // current in Amperes for PE TEST
-const float R6 = 1000.0; // R6 resistance in Ohms
-const float RP2040_VCC = 3.3;       // output voltage of the RP2040 (3.3V)
+const float R6 = 990.0; // R6 resistance in Ohms
+const float RP2040_VCC = 3.224; // output voltage of the RP2040 (3.3V)
 
+void measurePE();
+void measureLN();
 void setup() {
   Serial.begin(115200);
+  
+  while (!Serial) {
+    delay(10);
+  }
+  
+  delay(2000); 
+  Serial.println("\n--- BOOTING OpenPAT-RP2040 ---");
 
   pinMode(MOSFET_GATE, OUTPUT);
   pinMode(L_DRIVE, OUTPUT);
-  
-  // Base state: turn off MOSFET and L drive
   digitalWrite(MOSFET_GATE, LOW);
   digitalWrite(L_DRIVE, LOW);
 
-  // Initialize the ADS1115
-  if (!ads.begin()) {
-    Serial.println("Error: ADS1115 not found.");
-    while (1);
+  Wire1.setSDA(2); 
+  Wire1.setSCL(3); 
+  Wire1.begin();
+  
+  Serial.println("I2C1 gestartet. Suche ADS1115-Sensor...");
+
+  if (!ads.begin(0x48, &Wire1)) {
+    while (1) {
+      Serial.println("FEHLER: ADS1115 nicht gefunden! Jumper pruefen!");
+      delay(1000);
+    }
   }
 
-  ads.setGain(GAIN_ONE); // Set gain to 1 for ±4.096V range
-
+  ads.setGain(GAIN_ONE);
   Serial.println("System ready. Press 'p' for PE-Test, 'l' for L/N-Test");
 }
 
@@ -49,6 +62,11 @@ void loop() {
     } 
     else if (input == 'L' || input == 'l') {
       measureLN();
+    }
+    else if (input == 'Q' || input == 'q') {
+      digitalWrite(L_DRIVE, LOW);
+      digitalWrite(MOSFET_GATE, LOW);
+      Serial.println("\n-> Alle Ausgaenge deaktiviert. Standby.");
     }
   }
 }
