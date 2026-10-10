@@ -40,11 +40,11 @@ void setup() {
   Wire1.setSCL(3); 
   Wire1.begin();
   
-  Serial.println("I2C1 gestartet. Suche ADS1115-Sensor...");
+  Serial.println("I2C1 booted");
 
   if (!ads.begin(0x48, &Wire1)) {
     while (1) {
-      Serial.println("FEHLER: ADS1115 nicht gefunden! Jumper pruefen!");
+      Serial.println("Error: ADS1115 not found!");
       delay(1000);
     }
   }
@@ -66,7 +66,7 @@ void loop() {
     else if (input == 'Q' || input == 'q') {
       digitalWrite(L_DRIVE, LOW);
       digitalWrite(MOSFET_GATE, LOW);
-      Serial.println("\n-> Alle Ausgaenge deaktiviert. Standby.");
+      Serial.println("\n Standby.");
     }
   }
 }
