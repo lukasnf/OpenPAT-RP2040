@@ -24,7 +24,7 @@ The measurement circuitry is designed around the RP2040 and relies on a dedicate
 ## 📂 Repository Contents
 <img width="631" height="490" alt="Bildschirmfoto 2026-10-05 um 15 35 09" src="https://github.com/user-attachments/assets/ea2fb498-5255-4306-849e-52d807fd6b38" />
 
-<img width="1732" height="1044" alt="image" src="https://github.com/user-attachments/assets/b9f0d478-d94d-4992-8590-68096dfa7ec6" />
+<img width="1818" height="1118" alt="image" src="https://github.com/user-attachments/assets/3fd09da4-3e47-48c3-98b1-30cde7f4cd65" />
 
 ...
 
