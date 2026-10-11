@@ -5398,6 +5398,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 143.51 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0e70d089-2186-4b1c-a7d1-a9f21a93bccb")
 		)
@@ -5715,6 +5726,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C83574"
+			(at 123.19 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3b1746dd-2e0d-43ff-8892-e515e7044a9c")
 		)
@@ -5790,6 +5812,17 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 134.62 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C20917"
 			(at 134.62 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6044,6 +6077,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 160.02 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c12518a9-530e-427f-a534-c2770350853b")
 		)
@@ -6203,6 +6247,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 143.51 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "54c7eee9-b76d-4483-8db6-c36a6bee1778")
 		)
@@ -6274,6 +6329,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 168.91 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 168.91 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6355,6 +6421,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x09, script generated"
+			(at 116.84 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
 			(at 116.84 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6457,6 +6534,17 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 151.13 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
 			(at 151.13 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6710,6 +6798,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 184.15 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d8038857-67c2-4be4-a0de-df85a35a3cdb")
 		)
@@ -6869,6 +6968,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 185.42 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "48f46fc0-0af6-42d2-869b-83e43d3fefc0")
 		)
@@ -6943,6 +7053,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x09, script generated"
+			(at 106.68 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
 			(at 106.68 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7056,6 +7177,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 184.15 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "51af0b23-0414-4ba6-9282-8f0389402843")
 		)
@@ -7123,6 +7255,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 171.45 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 171.45 124.46 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7282,6 +7425,17 @@
 			)
 		)
 		(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C83574"
 			(at 142.24 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7456,6 +7610,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C83574"
+			(at 162.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "e980ef47-13ce-498c-96ab-b80374ebb7cb")
 		)
@@ -7542,6 +7707,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C83574"
+			(at 185.42 78.74 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5591c900-31ab-4f9a-b9fb-9e4bf083ac49")
 		)
@@ -7614,6 +7790,17 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x10, script generated"
+			(at 218.44 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
 			(at 218.44 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7883,6 +8070,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 128.27 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c3ad2bd0-2f96-4683-be93-5d88ae5a1ca3")
 		)
@@ -7954,6 +8152,17 @@
 			)
 		)
 		(property "Description" "1.5A 35V Adjustable Linear Regulator, TO-220"
+			(at 154.94 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
 			(at 154.94 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -8048,6 +8257,17 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 180.34 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dfb3089c-2826-434c-8a78-1deed553353a")
 		)
@@ -8118,6 +8338,17 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 147.32 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 147.32 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
