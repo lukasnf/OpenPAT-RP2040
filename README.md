@@ -21,6 +21,19 @@ The measurement circuitry is designed around the RP2040 and relies on a dedicate
 * **L-N Resistance Measurement:** Controlled via RP2040 GPIOs. An NMOS transistor (Q1, controlled by GP26) and a switched pull-up (via GP27 and a 1kΩ resistor) are used to configure the circuit to measure the resistance between the Phase and Neutral test points via the L/N_TEST1 connector.
 * **Input Protection:** All sensitive analog measurement lines are protected against transients. The circuit uses 10kΩ series resistors (R2, R3, R4, R5) and BAT54S dual Schottky diodes (D1, D2, D3, D4) to safely clamp the ADC inputs to the 3.3V rail and Ground.
 
+## Components
+
+| Component | Value / Type | Function in Project |
+| :--- | :--- | :--- |
+| Microcontroller | RP2040 Zero 
+| ADC | ADS1115 
+| N-Channel MOSFET | IRLML 2502 (20V, 4.2A, SOT-23) 
+| Schottky Diode | BAT54S-7-F (30V, 0.2A, SOT23) 
+| Capacitor | 100 nF (50V, X7R, RM 2.5) 
+| Terminal Block | MKDS 1.5/2-5.08 (2-pin, RM 5.08) 
+| Shunt Resistor | 6.2 Ω (1 Watt) 
+| Standard Resistors | 10 kΩ, 1 kΩ 
+
 ## 📂 Repository Contents
 <img width="631" height="490" alt="Bildschirmfoto 2026-10-05 um 15 35 09" src="https://github.com/user-attachments/assets/ea2fb498-5255-4306-849e-52d807fd6b38" />
 
