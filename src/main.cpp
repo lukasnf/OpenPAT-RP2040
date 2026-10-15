@@ -15,7 +15,7 @@ const int ADS_L_T     = 2; // L_T
 const int ADS_N_T     = 3; // N_T
 
 // constants
-const float PE_CURRENT_A = 0.2016; // current in Amperes for PE TEST
+const float PE_CURRENT_A = 0.195; // current in Amperes for PE TEST
 const float R6 = 990.0; // R6 resistance in Ohms
 const float RP2040_VCC = 3.224; // output voltage of the RP2040 (3.3V)
 
