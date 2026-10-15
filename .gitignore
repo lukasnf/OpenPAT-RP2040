@@ -86,4 +86,7 @@ Testing/
 *.kicad_cache
 .kicad_prl*
 .kicad_prl
-fabrication-toolkit-options.json
+**/fabrication-toolkit-options.json
+**/production/
+
+.history/
