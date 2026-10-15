@@ -23,8 +23,8 @@ The measurement circuitry is designed around the RP2040 and relies on a dedicate
 
 ## Components
 
-| Component | Value / Type | Function in Project |
-| :--- | :--- | :--- |
+| Component | Value / Type |
+| :--- | :--- | 
 | Microcontroller | RP2040 Zero 
 | ADC | ADS1115 
 | N-Channel MOSFET | IRLML 2502 (20V, 4.2A, SOT-23) 
