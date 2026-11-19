@@ -1,5 +1,5 @@
 # OpenPAT-RP2040
-
+** under developmend accuracy data is coming soon**
 > **⚠️ SAFETY DISCLAIMER:** This project is for educational and preliminary diagnostic purposes only. While it tests electrical safety parameters, it is **not** a certified Portable Appliance Tester (PAT). It does not replace legally required safety tests conducted with calibrated and certified equipment. Always assume appliances are dangerous until proven otherwise.
 
 **OpenPAT-RP2040** is a low-voltage Portable Appliance Tester based on the RP2040 microcontroller. It is designed to safely measure Protective Earth (PE) continuity at standard test currents (200mA) and verify Phase-to-Neutral (L-N) resistance on **unpowered** appliances. 
