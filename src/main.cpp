@@ -7,12 +7,11 @@ Adafruit_ADS1115 ads;
 // pin definitions
 const int MOSFET_GATE = 26; // GPIO 26 for MOSFET gate
 const int L_DRIVE = 27; // GPIO 27 for L drive
+int Samples = 32;
 
 // ADS pins definitions
-const int ADS_PE_HIGH = 0; // PE_TEST_RE
-const int ADS_PE_LOW  = 1; // PE_TEST
-const int ADS_L_T     = 2; // L_T
-const int ADS_N_T     = 3; // N_T
+const int ADS_L_T  = 2; // L_T
+const int ADS_N_T  = 3; // N_T
 
 // constants
 const float PE_CURRENT_A = 0.195; // current in Amperes for PE TEST
@@ -74,18 +73,34 @@ void loop() {
 void measurePE() {
   Serial.println("\n Starting PE-Test...");
 
-   // differential measurement between ADS_PE_TEST and ADS_PE_TEST_RE
-  int16_t adc0_1 = ads.readADC_Differential_0_1();
-  
-  // calculate the voltage (1 Bit = .125 mV)
-  float voltage_PE = (adc0_1 * 0.125) / 1000.0;
+  int32_t sum = 0.0;
+  int64_t sumsq = 0.0;
 
-  // calculating the resistance of PE
-  float resistance_PE = voltage_PE / PE_CURRENT_A;
+  for(int i = 0; i < Samples ; i++ ){
+    // differential measurement between ADS_PE_TEST and ADS_PE_TEST_RE
+    int16_t adc0_1 = ads.readADC_Differential_0_1();
+    
+    sum += adc0_1;
+    sumsq += (adc0_1 * adc0_1);
+  }
+  double mean_c = double(sum) / Samples;
+  double variance = (sumsq - Samples * (mean_c * mean_c)) / (Samples - 1);
+  if (variance < 0) {
+    variance = 0;
+  }
+  double sigma_c = sqrt(variance);
+  double sigma_m = sigma_c / sqrt(Samples);
+  double lsb = ads.computeVolts(1);
+  float mean_v = mean_c * lsb;
+  float sigma_v = sigma_c * lsb;
+  float sigma_m_v = sigma_m * lsb;
+
+
+  float resistance_PE = fabs(mean_v) / PE_CURRENT_A;
 
   // output the results
-  Serial.print("Voltaged Drop: "); Serial.print(voltage_PE, 4); Serial.println(" V");
-  Serial.print("PE Resistance:   "); Serial.print(resistance_PE, 3); Serial.println(" Ohm");
+  Serial.printf("U_PE  = %.3f mV +/- %.3f mV (sd = %.3f mV, N = %d)\n", mean_v * 1000, sigma_m_v * 1000, sigma_v * 1000, Samples);
+  Serial.printf("R_PE  = %.4f Ohm\n", resistance_PE);
 }
 
 
